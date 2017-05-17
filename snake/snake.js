@@ -66,34 +66,34 @@
 	        Snake.setBackground(Snake.body[Snake.body.length - 1]);
 
 	        switch (Snake.direction) {
-	            case 'up':
-	                Snake.body.unshift({ x: Snake.body[0].x, y: Snake.body[0].y - 1 });
-	            	if (Snake.body[0].y < 1) {
-	            		Snake.gameover();
-	            		return;
-	            	}
-	                break;
-	            case 'down':
-	                Snake.body.unshift({ x: Snake.body[0].x, y: Snake.body[0].y + 1 });
-	            	if (Snake.body[0].y > Snake.rows) {
-	            		Snake.gameover();
-	            		return;
-	            	}
-	                break;
-	            case 'left':
-	                Snake.body.unshift({ x: Snake.body[0].x - 1, y: Snake.body[0].y });
-	            	if (Snake.body[0].x < 1) {
-	            		Snake.gameover();
-	            		return;
-	            	}
-	                break;
-	            case 'right':
-	                Snake.body.unshift({ x: Snake.body[0].x + 1, y: Snake.body[0].y });
-	            	if (Snake.body[0].x > Snake.columns) {
-	            		Snake.gameover();
-	            		return;
-	            	}
-	                break;
+            case 'up':
+                Snake.body.unshift({ x: Snake.body[0].x, y: Snake.body[0].y - 1 });
+            	if (Snake.body[0].y < 1) {
+            		Snake.gameover();
+            		return;
+            	}
+                break;
+            case 'down':
+                Snake.body.unshift({ x: Snake.body[0].x, y: Snake.body[0].y + 1 });
+            	if (Snake.body[0].y > Snake.rows) {
+            		Snake.gameover();
+            		return;
+            	}
+                break;
+            case 'left':
+                Snake.body.unshift({ x: Snake.body[0].x - 1, y: Snake.body[0].y });
+            	if (Snake.body[0].x < 1) {
+            		Snake.gameover();
+            		return;
+            	}
+                break;
+            case 'right':
+                Snake.body.unshift({ x: Snake.body[0].x + 1, y: Snake.body[0].y });
+            	if (Snake.body[0].x > Snake.columns) {
+            		Snake.gameover();
+            		return;
+            	}
+                break;
 	        }
 
 	        var isInBody = false;

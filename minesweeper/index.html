@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minesweeper</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			overflow: hidden;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#app {
+			width: 300px;
+			height: 200px;
+			border-left: 1px solid;
+			border-bottom: 1px solid;
+		}
+		#app > div {
+			float: left;
+			width: 19px;
+			height: 19px;
+			border-top: 1px solid;
+			border-right: 1px solid;
+			background-color: #9cc1d6;
+			background-size: 19px 19px;
+			background-repeat: no-repeat;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script src="minesweeper.js"></script>
+</html>
